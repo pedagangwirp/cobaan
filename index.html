@@ -2268,12 +2268,12 @@ function showConfirmationModal(){
   
   // Get method description
   var methodDesc = '';
-  if(codPick === 'Bayar ke Petinggi + Diantar'){
-    methodDesc = 'bayar di lounge, lalu diantar';
-  } else if(codPick === 'Bayar ke Petinggi + Ambil Sendiri'){
-    methodDesc = 'bayar di lounge, ambil sendiri';
+  if(codPick === 'bayar di lounge, lalu diantar'){
+    methodDesc = 'jangan lupa bayar di pettingi/handle orderan';
+  } else if(codPick === 'bayar di lounge + Ambil Sendiri'){
+    methodDesc = 'jangan lupa bayar di pettingi/handle orderan';
   } else if(codPick === 'Bagi-Bagi di Lounge'){
-    methodDesc = 'bayar di lounge, bagi di depan lounge';
+    methodDesc = 'jangan lupa bayar di pettingi/handle orderan';
   }
   
   html += '<div class="confirm-row"><div class="confirm-label">Metode</div><div class="confirm-value">' + codPick + '<br><span style="color:var(--dim);font-size:12px">' + methodDesc + '</span></div></div>';
@@ -2427,12 +2427,12 @@ async function submitOrder(){
   
   // Add method with description
   var methodDesc = '';
-  if(codPick === 'Bayar ke Petinggi + Diantar'){
-    methodDesc = 'bayar di lounge, lalu diantar';
-  } else if(codPick === 'Bayar ke Petinggi + Ambil Sendiri'){
-    methodDesc = 'bayar di lounge, ambil sendiri';
+  if(codPick === 'bayar di lounge, lalu diantar'){
+    methodDesc = 'jangan lupa bayar di pettingi/handle orderan';
+  } else if(codPick === 'bayar di lounge + Ambil Sendiri'){
+    methodDesc = 'jangan lupa bayar di pettingi/handle orderan';
   } else if(codPick === 'Bagi-Bagi di Lounge'){
-    methodDesc = 'bayar di lounge, bagi di depan lounge';
+    methodDesc = 'jangan lupa bayar di pettingi/handle orderan';
   }
   
   embed.fields.push({name:'🚗 Metode', value:codPick + '\n*' + methodDesc + '*', inline:true});
